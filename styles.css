@@ -62,21 +62,14 @@ body {
 }
 .accordion__individual--secondary {
   display: none;
+  /* transform: translateY(-100%); */
+  /* display: none; */
   font-weight: 400;
 }
 
 /*general*/
 .active {
   display: block;
-}
-
-.arrow-rotate {
-  transform: rotate(-180deg);
-  transition-duration: 0.5s;
-}
-
-.arrow-rotate-back {
-  transform: rotate(180deg);
   transition-duration: 0.5s;
 }
 
