@@ -19,6 +19,7 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 }
 
 .accordion__individual {
@@ -34,7 +35,7 @@ body {
 }
 
 .accordion__individual > div:hover {
-  box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 4px 1px rgba(0, 0, 0, 0.1);
 }
 .accordion__individual--primary {
   display: flex;
@@ -54,7 +55,8 @@ body {
   filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg)
     brightness(104%) contrast(97%);
   transition: transform 0.5s linear;
-  transform: rotate(90deg);
+  width: 16px;
+  /* transform: rotate(90deg); */
 }
 
 .accordion__individual:hover .arrow-selector img {
@@ -70,6 +72,16 @@ body {
 /*general*/
 .active {
   display: block;
+  transition-duration: 0.5s;
+}
+
+.arrow-active {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.arrow-de-active {
+  transform: rotate(0);
   transition-duration: 0.5s;
 }
 
